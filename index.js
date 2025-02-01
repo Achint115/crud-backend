@@ -11,7 +11,7 @@ app.use(express.json());
 dbConnect();
 
 app.use(cors({
-  origin : "http://localhost:5173"
+  origin : "*"
 }))
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
